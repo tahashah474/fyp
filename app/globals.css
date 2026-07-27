@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-pk-cream text-pk-dark antialiased;
+    transition: direction 0.2s ease;
+  }
+
+  /* RTL support */
+  [dir="rtl"] {
+    text-align: right;
+  }
+
+  [dir="rtl"] .flip-rtl {
+    transform: scaleX(-1);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-pk-green text-pk-cream px-6 py-3 rounded-2xl font-semibold 
+           hover:bg-pk-green-light transition-all duration-200 
+           shadow-warm hover:shadow-warm-lg active:scale-95
+           focus:outline-none focus:ring-2 focus:ring-pk-green focus:ring-offset-2;
+  }
+
+  .btn-gold {
+    @apply bg-pk-gold text-pk-dark px-6 py-3 rounded-2xl font-semibold
+           hover:bg-pk-gold-light transition-all duration-200
+           shadow-gold hover:shadow-warm-lg active:scale-95
+           focus:outline-none focus:ring-2 focus:ring-pk-gold focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-pk-green text-pk-green px-6 py-3 rounded-2xl font-semibold
+           hover:bg-pk-green hover:text-pk-cream transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-pk-green focus:ring-offset-2;
+  }
+
+  .btn-danger {
+    @apply bg-pk-terra text-white px-6 py-3 rounded-2xl font-semibold
+           hover:bg-red-700 transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-pk-terra focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-warm p-6 transition-shadow duration-200;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-warm-lg cursor-pointer;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-white
+           focus:outline-none focus:ring-2 focus:ring-pk-green focus:border-transparent
+           transition-all duration-200 text-pk-dark placeholder-gray-400;
+  }
+
+  .label-text {
+    @apply block text-sm font-semibold text-pk-dark mb-1.5;
+  }
+
+  .urgency-emergency {
+    @apply bg-pk-terra text-white px-3 py-1 rounded-full text-sm font-bold;
+  }
+
+  .urgency-soon {
+    @apply bg-pk-gold text-pk-dark px-3 py-1 rounded-full text-sm font-bold;
+  }
+
+  .urgency-monitor {
+    @apply bg-pk-sage text-white px-3 py-1 rounded-full text-sm font-bold;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold text-pk-dark mb-2;
+  }
+
+  .section-subtitle {
+    @apply text-pk-dark/70 text-base;
+  }
+
+  /* Language transition */
+  .lang-transition {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .lang-transitioning {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+/* Urdu font support */
+.font-urdu, [dir="rtl"] {
+  font-family: var(--font-noto-nastaliq), 'Jameel Noori Nastaleeq', serif;
+  line-height: 2.2;
+  letter-spacing: 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4EDE4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7A9E7E;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #01411C;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  @apply accent-pk-green w-4 h-4;
+}
+
+/* File input styling */
+input[type="file"] {
+  @apply text-sm text-pk-dark/70;
+}
+
+input[type="file"]::file-selector-button {
+  @apply btn-outline text-sm py-1.5 px-3 mr-3 cursor-pointer;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}

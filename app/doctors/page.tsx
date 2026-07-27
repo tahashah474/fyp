@@ -130,9 +130,9 @@ export default function DoctorsPage() {
         <div className="mt-12 card bg-pk-green text-white text-center py-10">
           <div className="text-4xl mb-3">🌾</div>
           <h2 className="text-xl font-bold mb-2">Need help with your livestock?</h2>
-          <p className="text-white/80 text-sm mb-6">
-            Report your animal's symptoms, get an AI assessment, and connect with a verified doctor.
-          </p>
+         <p className="text-white/80 text-sm mb-6">
+  Report your animal&apos;s symptoms, get an AI assessment, and connect with a verified doctor.
+</p>
           <Link href="/auth/signup?role=farmer" className="bg-pk-gold text-pk-dark px-6 py-3 rounded-2xl font-bold hover:bg-pk-gold-light transition-all inline-block">
             Get Started Free →
           </Link>

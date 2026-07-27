@@ -190,9 +190,9 @@ The application is deployed using Vercel.
 
 Live URL:
 
-```
-YOUR_DEPLOYED_URL
-```
+[```
+Y
+```](https://fyp-c6vl.vercel.app?_vercel_share=hHugqCqTDL2wStUlsTkZOMjBogP9ojbC)
 
 ---
 

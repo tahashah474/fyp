@@ -1,7 +1,8 @@
 # MalShifa 🐄
 
 AI-Powered Livestock Healthcare Platform for Farmers and Veterinary Doctors
-
+URL VERCEL
+https://fyp-c6vl.vercel.app?_vercel_share=hHugqCqTDL2wStUlsTkZOMjBogP9ojbC
 ## Overview
 
 MalShifa is an AI-powered livestock healthcare platform designed to help farmers, especially those living in rural and remote areas, get initial guidance about animal health problems.
